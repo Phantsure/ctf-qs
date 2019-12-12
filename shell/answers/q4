@@ -1,0 +1,8 @@
+echo "hello everyone"
+echo "jack is happy" | base64 > ali
+ls
+cat ali
+echo "GLUG{Y0u_g07_m3_7h1s_71m3}" | base64 > flag.enc
+ls
+mv flag.enc baba
+ls
