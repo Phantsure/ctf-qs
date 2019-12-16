@@ -8,7 +8,7 @@ import os
 # for i in range(160,255):
 # 	non_printables.append(chr(i))
 
-for i in range(1023):
+for i in range(15):
 	filename  = ''.join(random.choices(string.ascii_lowercase, k=random.randint(4,7)))
 	filename = '-'+filename
 	with open(filename,"w") as f:
