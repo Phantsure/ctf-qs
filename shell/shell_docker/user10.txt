@@ -1,0 +1,11 @@
+shell0:notso67tsd:1100:1000:Shell0Player:/home/shell0:/bin/bash
+shell1:shell1:1101:1001:Shell1Player:/home/shell1:/bin/bash
+shell2:shell2:1102:1002:Shell2Player:/home/shell2:/bin/bash
+shell3:shell3:1103:1003:Shell3Player:/home/shell3:/bin/bash
+shell4:shell4:1104:1004:Shell4Player:/home/shell4:/bin/bash
+shell5:shell5:1105:1005:Shell5Player:/home/shell5:/bin/bash
+shell6:shell6:1106:1006:Shell6Player:/home/shell6:/bin/bash
+shell7:shell7:1107:1007:Shell7Player:/home/shell7:/bin/bash
+shell8:shell8:1108:1008:Shell8Player:/home/shell8:/bin/bash
+shell9:shell9:1109:1009:Shell9Player:/home/shell9:/bin/bash
+shell10:shell10:1110:1010:Shell10Player:/home/shell10:/bin/bash
