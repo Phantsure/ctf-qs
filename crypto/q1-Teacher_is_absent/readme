@@ -1,0 +1,1 @@
+Put para.txt and flag.txt for download. the text in para.txt if decrypted is to decrypt flag.txt and be put in GLUG{...} to get the total flag, i.e. GLUG{thethingsyouusedtoownnowtheyownyou} (make it case insensitive). original paragragh is in orig_para.txt and substitution key in "substitution_Sequence"
