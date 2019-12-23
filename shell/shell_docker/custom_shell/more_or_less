@@ -1,0 +1,4 @@
+#!/bin/sh
+
+more ~/text.txt
+exit 0

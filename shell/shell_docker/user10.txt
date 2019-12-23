@@ -7,5 +7,5 @@ shell5:shell5:1105:1005:Shell5Player:/home/shell5:/bin/bash
 shell6:shell6:1106:1006:Shell6Player:/home/shell6:/bin/bash
 shell7:shell7:1107:1007:Shell7Player:/home/shell7:/bin/bash
 shell8:shell8:1108:1008:Shell8Player:/home/shell8:/bin/bash
-shell9:shell9:1109:1009:Shell9Player:/home/shell9:/bin/bash
+shell9:shell9:1109:1009:Shell9Player:/home/shell9:/bin/more_or_less
 shell10:shell10:1110:1010:Shell10Player:/home/shell10:/bin/bash
