@@ -20,7 +20,8 @@ RUN mkdir /pirate
 RUN for group in ctf_player0 ctf_player1 ctf_player2 ctf_player3 ctf_player4 ctf_player5 ctf_player6 ctf_player7 ctf_player8 ctf_player9 ctf_player10;do groupadd ${group};done
 
 COPY user10.txt /ctf_work/
-#COPY grep /bin/grep
+COPY grep /bin/grep
+COPY custom_shell/more_or_less /bin/more_or_less
 
 RUN newusers /ctf_work/user10.txt
 
@@ -66,6 +67,10 @@ RUN chmod -R 750 /home/shell10/
 #RUN chmod 4550 /home/shell7/read-it
 #RUN chmod 400 /home/shell7/flag.txt
 
+RUN chmod +x /bin/more_or_less
+
+RUN chmod +x /home/shell10/binary
+RUN chmod -rw /home/shell10/binary
 
 RUN mv /bin/kill /pirate/pkill
 RUN mv /bin/ps /pirate/pps
