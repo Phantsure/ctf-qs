@@ -1,0 +1,3 @@
+This is a simple web question.
+
+Clicking get button on index page redirects to secret with auth parameter as false. Change it to true to get the flag.
