@@ -37,7 +37,7 @@ if(!empty($_POST))
   else {
     $result = $con->query($query);
     $row = $result->fetchArray();
-    
+    $FLAG = 'GLUG{youre_a_ good_doc}';
     if ($row) {
       echo "<h1>Logged in!</h1>";
       echo "<p>Your flag is: $FLAG</p>";
