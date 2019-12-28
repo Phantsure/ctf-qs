@@ -1,0 +1,2 @@
+ this is a sql injection problem which doesnt allow the 1 or 1 payload. we need union keyword to get the flag 
+ give this as the passowrd - ' union select 1 from users--
