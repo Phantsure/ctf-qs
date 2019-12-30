@@ -1,0 +1,4 @@
+flag = GLUG{ettubrute}(case insensitive)
+key = ettubrute
+
+text is vigenere cipher encrypted using key "ettubrute". could be solved using kasiski analysis
