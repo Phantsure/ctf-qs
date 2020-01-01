@@ -1,0 +1,1 @@
+intended way to solve: players will use xxd, which has suid permissions, to get the hash of the user "fyodor". they will break the password of fyodor that is "123", login into "fyodor" using password found and find the flag in "flag.txt" in the home directory.
