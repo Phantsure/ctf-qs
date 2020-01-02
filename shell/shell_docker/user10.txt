@@ -9,3 +9,8 @@ shell7:shell7:1107:1007:Shell7Player:/home/shell7:/bin/bash
 shell8:shell8:1108:1008:Shell8Player:/home/shell8:/bin/bash
 shell9:shell9:1109:1009:Shell9Player:/home/shell9:/bin/more_or_less
 shell10:shell10:1110:1010:Shell10Player:/home/shell10:/bin/bash
+shell11:shell11:1111:1011:Shell11Player:/home/shell11:/bin/bash
+shell12:shell12:1112:1012:Shell12Player:/home/shell12:/bin/bash
+shell13:shell13:1113:1013:Shell13Player:/home/shell13:/bin/bash
+shell14:shell14:1114:1014:Shell14Player:/home/shell14:/bin/bash
+fyodor:123:1115:1015:Shell15Player:/home/shell15:/bin/bash
