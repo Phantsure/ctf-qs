@@ -1,0 +1,3 @@
+multiple ciphers used. from hints.txt "arb" is a keyword.
+0110 is a xor encryption with "61 72 62" as operand and a french man gives vigenere cipher with arb as a keyword. decrypt to
+get the flag as GLUG{arb_you_sad_to_see_me}
