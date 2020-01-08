@@ -31,7 +31,8 @@ int main (int argc, char **argv)
     getline(&input, &len, stdin);
     //There is no win function, but the flag is wandering in the memory!
     char * buf = malloc(sizeof(char)*FLAG_BUFFER);
-    FILE *f = fopen("flag.txt","r");
+    // path to flag is hidden
+    FILE *f = fopen("{{HIDDEN]]","r");
     fgets(buf,FLAG_BUFFER,f);
     printMessage1(input);
     fflush(stdout);

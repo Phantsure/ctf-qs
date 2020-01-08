@@ -1,3 +1,5 @@
 this problem exploits the use of relative path. make a dir problems/f49abea6827cafa20a035340d3812d09/ . copy the binary in 
 that directory and make another auth file with yes in it.
 run the binary now to get the flag
+
+use this path in place of hidden:/var/tmp/6470e394cbf6dab6a91682cc8585059b

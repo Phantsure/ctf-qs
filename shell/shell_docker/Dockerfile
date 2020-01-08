@@ -17,7 +17,7 @@ RUN mkdir /ctf_work
 RUN mkdir /ctf_work/host
 RUN mkdir /pirate
 
-RUN for group in ctf_player0 ctf_player1 ctf_player2 ctf_player3 ctf_player4 ctf_player5 ctf_player6 ctf_player7 ctf_player8 ctf_player9 ctf_player10 ctf_player11 ctf_player12 ctf_player13 ctf_player14 ctf_player15;do groupadd ${group};done
+RUN for group in ctf_player0 ctf_player1 ctf_player2 ctf_player3 ctf_player4 ctf_player5 ctf_player6 ctf_player7 ctf_player8 ctf_player9 ctf_player10 ctf_player11 ctf_player12 ctf_player13 ctf_player14 ctf_player15 ctf_player16;do groupadd ${group};done
 
 COPY user10.txt /ctf_work/
 COPY xxd /bin/xxd
@@ -40,7 +40,8 @@ COPY ctfcopy/q11/* /home/shell11/
 COPY ctfcopy/q12/* /home/shell12/
 COPY ctfcopy/q13/* /home/shell13/
 COPY ctfcopy/q14/originaluser/* /home/shell14/
-COPY ctfcopy/q14/newuser/* /home/shell15/
+COPY ctfcopy/q15/* /home/shell15/
+COPY ctfcopy/q14/newuser/* /home/shell16/
 
 RUN chown -R root:ctf_player0 /home/shell0/
 RUN chown -R root:ctf_player1 /home/shell1/
@@ -58,6 +59,7 @@ RUN chown -R root:ctf_player12 /home/shell12/
 RUN chown -R root:ctf_player13 /home/shell13/
 RUN chown -R root:ctf_player14 /home/shell14/
 RUN chown -R root:ctf_player15 /home/shell15/
+RUN chown -R root:ctf_player16 /home/shell16/
 
 
 RUN chmod -R 750 /home/shell0/
@@ -76,6 +78,7 @@ RUN chmod -R 750 /home/shell12/
 RUN chmod -R 750 /home/shell13/
 RUN chmod -R 750 /home/shell14/
 RUN chmod -R 750 /home/shell15/
+RUN chmod -R 750 /home/shell16/
 
 #RUN chown shell0:ctf_player7 /home/shell7/flag.txt
 #RUN chown shell0:ctf_player7 /home/shell7/read-it
@@ -93,7 +96,12 @@ RUN chmod -rw /home/shell11/watertank
 
 RUN chmod u+s /bin/xxd
 
-# permissions for q12, q13 are to be seen
+# permissions for q12, q13 are to be seen: change both question slightly in q12 hide path and give the source,
+# in q13 put auth file in relative path and flag in somehidden location then give the source.
+RUN mv /home/shell12/flag.txt /var/tmp/02249d2846749f65d09a0c74e21c2125
+RUN chown -R root:ctf_player12 /var/tmp/02249d2846749f65d09a0c74e21c2125
+RUN mv /home/shell13/flag /var/tmp/6470e394cbf6dab6a91682cc8585059b
+RUN chown -R root:ctf_player13 /var/tmp/6470e394cbf6dab6a91682cc8585059b
 
 RUN mv /bin/kill /pirate/pkill
 RUN mv /bin/ps /pirate/pps

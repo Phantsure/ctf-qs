@@ -18,7 +18,8 @@ int main(int argc, char **argv)
     if (strcmp(auth, "no") != 0)
     {
         FILE *flagf;
-        flagf = fopen("/problems/f49abea6827cafa20a035340d3812d09/flag", "r");
+        // path to flag is hidden
+        flagf = fopen("HIddEn", "r");
         char flag[64];
         fgets(flag, 64, flagf);
         printf("Oh. Well the auth file doesn't say no anymore so... Here's the flag: %s", flag);
