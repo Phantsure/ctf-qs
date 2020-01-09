@@ -1,0 +1,8 @@
+this is a question based on the ObjectId function on mongodb.
+
+a seemingly useless website which has 3 consecutive http requests to mongodb in which one has the response that all actions have 
+been logged into a file named actions.txt
+the text however is in readable format and one has to encode it back to mongodb object id format which has 12 bytes and then make
+a get request to /objects with id parameter as the value to get the flag.
+
+flag: "GLUG{0bj3ct_ids_ar3nt_s3cr3ts}"

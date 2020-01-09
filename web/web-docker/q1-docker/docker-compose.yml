@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web-php:
+    image: php:7.2-apache
+    container_name: web-q1
+    restart: always
+    ports:
+      - "7005:80"
+    volumes:
+      - ./q1/:/var/www/html
