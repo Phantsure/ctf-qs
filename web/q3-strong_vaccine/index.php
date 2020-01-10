@@ -40,7 +40,7 @@ if(!empty($_POST))
     $FLAG = 'GLUG{youre_a_ good_doc}';
     if ($row) {
       echo "<h1>Logged in!</h1>";
-      echo "<p>Your flag is: ".$FLAG"</p>";
+      echo "Your flag is: ".$FLAG;
     } else {
       echo "<h1>Login failed.</h1>";
     }
