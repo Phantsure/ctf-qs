@@ -1,1 +1,15 @@
-# work to be done
+version: "3"
+services:
+  node:
+    image: "node:10"
+    # user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./q5/:/home/node/app
+    expose:
+      - "7081"
+    ports: 
+      - "7081:8000"
+    command: bash -c "npm install && npm start"
