@@ -29,7 +29,6 @@ int main (int argc, char **argv)
     unsigned int len;
     char *input = NULL;
     getline(&input, &len, stdin);
-    //There is no win function, but the flag is wandering in the memory!
     char * buf = malloc(sizeof(char)*FLAG_BUFFER);
     FILE *f = fopen("flag.txt","r");
     fgets(buf,FLAG_BUFFER,f);
